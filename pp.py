@@ -55,7 +55,6 @@ FormatHtml(ie.outerHTML())
 #url = 'http://www.sciencedirect.com/science?_ob=ArticleListURL&_method=tag&refSource=search&_st=13&count=739&_chunk=2&PREV_LIST=1&NEXT_LIST=3&view=c&md5=e528e094dcc02c469caa87884e42fb84&_ArticleListID=987492397&sisr_search=&next=next+page&sisrterm='
 
 url = 'http://www.sciencedirect.com/science?_ob=ArticleListURL&_method=list&_ArticleListID=988199744&_st=17&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=49b6cf8f710c22f40e5ca2c9b0517312'
-
 ie = PAMIE()
 ie.navigate(url)
 
