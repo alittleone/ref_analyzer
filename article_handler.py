@@ -15,5 +15,5 @@ articleTitle = unicode(titleElement.text_content()).replace('\n', '')
 
 authorsElement = doc.get_element_by_id('authorsAnchors')
 ps = authorsElement.cssselect('strong>p')[0]
-authorInfos = [unicode(x).replace(' and ', '').replace(', ', '') for x in ps.itertext() if x != ', ']
+authorInfos = [unicode(x).replace(' and ', ' ').strip(', ') for x in ps.itertext() if x != ', ']
 
