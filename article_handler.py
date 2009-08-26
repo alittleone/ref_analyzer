@@ -11,7 +11,7 @@ html = resps.read()
 doc = lxml.html.fromstring(html) # lxml.html.parse(resps)
 
 titleElement = doc.find_class('articleTitle')[0]
-articleTitle = unicode(titleElement.text_content()).replace('\n', '')
+articleTitle = unicode(titleElement.text_content()).strip(', \n')
 
 authorsElement = doc.get_element_by_id('authorsAnchors')
 ps = authorsElement.cssselect('strong>p')[0]
